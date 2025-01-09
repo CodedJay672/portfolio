@@ -9,22 +9,22 @@ const Topbar = () => {
         <LogoTitle>manny dev</LogoTitle>
       </Logo>
       <NavMenu>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#about" role="navigation">
           ABOUT
         </NavLink>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#skills" role="navigation">
           SKILLS
         </NavLink>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#projects" role="navigation">
           PROJECTS
         </NavLink>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#blogs" role="navigation">
           BLOGS
         </NavLink>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#experience" role="navigation">
           EXPERIENCE
         </NavLink>
-        <NavLink href="#" role="navigation">
+        <NavLink href="#contact" role="navigation">
           CONTACT
         </NavLink>
       </NavMenu>

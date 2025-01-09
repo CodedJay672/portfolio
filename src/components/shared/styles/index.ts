@@ -13,8 +13,8 @@ export const P = styled.p<{
 `;
 
 export const Div = styled.div<{
-  $width: string;
-  $height: string;
+  $width?: string;
+  $height?: string;
   $flex?: string;
   "$flex-direction"?: string;
   "$justify-content"?: string;
@@ -26,8 +26,10 @@ export const Div = styled.div<{
   "$border-radius"?: string;
   $overflow?: string;
   "$background-color"?: string;
+  $grow?: string;
 }>`
   width: ${(props) => props.$width ?? props.$width};
+  max-width: 1800px;
   height: ${(props) => props.$height ?? props.$height};
   display: ${(props) => props.$flex ?? props.$flex};
   justify-content: ${(props) =>
@@ -44,6 +46,8 @@ export const Div = styled.div<{
   margin: ${(props) => props.$margin ?? props.$margin};
   background-color: ${(props) =>
     props["$background-color"] ?? props["$background-color"]};
+  flex: ${(props) => props.$grow ?? props.$grow};
+  position: relative;
 `;
 
 export const Img = styled.img<{
@@ -90,4 +94,16 @@ export const Button = styled.button<{
   }
 
   transition: 0.2s ease-in-out;
+`;
+
+export const H1 = styled.h1<{
+  $size?: string;
+  $weight?: string;
+  $leading?: string;
+  $tracking?: string;
+}>`
+  font-size: ${(props) => props.$size ?? props.$size};
+  font-weight: ${(props) => props.$weight ?? props.$weight};
+  line-height: ${(props) => props.$leading ?? props.$leading};
+  word-spacing: ${(props) => props.$tracking ?? props.$tracking};
 `;
