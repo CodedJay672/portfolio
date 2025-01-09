@@ -1,6 +1,6 @@
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { Div, Img, P } from "../../shared/styles";
-import SectionTitle from "../../shared/ui";
+import { SectionTitle } from "../../shared/ui";
 import { Span } from "./AboutMeStyles";
 import { PiInstagramLogoFill, PiLinkedinLogoFill } from "react-icons/pi";
 

@@ -52,5 +52,5 @@ export const HeroText = styled.div`
   width: max-content;
   display: flex;
   flex-direction: column;
-  width: 519.8px;
+  max-width: 519.8px;
 `;
