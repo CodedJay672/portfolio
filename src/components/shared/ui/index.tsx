@@ -6,6 +6,7 @@ import {
   ProjectLink,
   Span,
 } from "../../containers/Projects/ProjectStyles";
+import { HiHome } from "react-icons/hi";
 
 export const SectionTitle: React.FC<{ text: string }> = ({ text }) => {
   return (
@@ -221,5 +222,26 @@ export const ProjectDetails: React.FC<{
         </Div>
       </ProjectCard>
     </>
+  );
+};
+
+export const GoHome = () => {
+  return (
+    <Div
+      $width="40px"
+      $height="40px"
+      $border-radius="50%"
+      $position="fixed"
+      $bottom="90px"
+      $right="50px"
+      $shadow="2px 2px 30px 2px #000"
+      $flex="flex"
+      $justify-content="center"
+      $align-items="center"
+      as="a"
+      href="#home"
+    >
+      <HiHome size={20} />
+    </Div>
   );
 };

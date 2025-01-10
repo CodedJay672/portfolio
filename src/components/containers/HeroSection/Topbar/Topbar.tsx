@@ -3,7 +3,7 @@ import { Logo, LogoTitle, NavLink, NavMenu, Resume, Nav } from "./TopbarStyles";
 
 const Topbar = () => {
   return (
-    <Nav>
+    <Nav id="home">
       <Logo as="a" href="/">
         <HiChevronDoubleRight size={30} color="#0F172A" />
         <LogoTitle>manny dev</LogoTitle>

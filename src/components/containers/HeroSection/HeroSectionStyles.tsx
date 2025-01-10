@@ -4,8 +4,6 @@ export const Wrapper = styled.section`
   width: 100%;
   max-width: 1600px;
   position: relative;
-  height: 100dvh;
-  max-height: 1080px;
   padding: 1rem 160px;
 
   &::before {
@@ -45,7 +43,7 @@ export const HeroContainer = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 90dvh;
-  position: relative;
+  max-height: 1080px;
   z-index: 10;
 `;
 

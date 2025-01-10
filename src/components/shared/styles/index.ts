@@ -33,6 +33,12 @@ export const Div = styled.div<{
   $overflow?: string;
   "$background-color"?: string;
   $grow?: string;
+  $shadow?: string;
+  $position?: string;
+  $top?: string;
+  $left?: string;
+  $bottom?: string;
+  $right?: string;
 }>`
   width: ${(props) => props.$width ?? props.$width};
   max-width: 1800px;
@@ -53,7 +59,12 @@ export const Div = styled.div<{
   background-color: ${(props) =>
     props["$background-color"] ?? props["$background-color"]};
   flex: ${(props) => props.$grow ?? props.$grow};
-  position: relative;
+  box-shadow: ${(props) => props.$shadow ?? props.$shadow};
+  position: ${(props) => props.$position ?? props.$position};
+  top: ${(props) => props.$top ?? props.$top};
+  right: ${(props) => props.$right ?? props.$right};
+  bottom: ${(props) => props.$bottom ?? props.$bottom};
+  left: ${(props) => props.$left ?? props.$left};
 `;
 
 export const Img = styled.img<{
