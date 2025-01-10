@@ -39,9 +39,9 @@ export const Div = styled.div<{
   $left?: string;
   $bottom?: string;
   $right?: string;
+  $display?: string;
 }>`
   width: ${(props) => props.$width ?? props.$width};
-  max-width: 1800px;
   height: ${(props) => props.$height ?? props.$height};
   display: ${(props) => props.$flex ?? props.$flex};
   justify-content: ${(props) =>
@@ -65,6 +65,7 @@ export const Div = styled.div<{
   right: ${(props) => props.$right ?? props.$right};
   bottom: ${(props) => props.$bottom ?? props.$bottom};
   left: ${(props) => props.$left ?? props.$left};
+  display: ${(props) => props.$display ?? props.$display};
 `;
 
 export const Img = styled.img<{

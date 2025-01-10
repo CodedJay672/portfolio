@@ -11,33 +11,28 @@ export const GlobalStyled = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+  a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200px;
+  text-align: center;
+  color: #3c3e67;
+  }
+  
   #root {
     margin: 0 auto;
     width: 100%;
+    max-width: 1920px;
     background-color: #fff;
     font-variation-settings: "slnt" 0;
     font-optical-sizing: auto;
     background-olor: #fff;
     position: relative;
+  }
     
-    @media(max-width: ${({ theme }) => theme.color.md}) {
-      padding: 0 1rem;
-      font-size: 0.9rem;
-    }
-
-    @media(max-width: ${({ theme }) => theme.color.sm}) {
-      padding: 0 0.5rem;
-      font-size: 0.8rem;
-    }
-
-    @media(max-width: ${({ theme }) => theme.color.lg}) {
-      padding: 0 2rem;
-      font-size: 1rem;
-    }
-
-    @media(max-width: ${({ theme }) => theme.color.xl}) {
-      padding: 0 3rem;
-      font-size: 1.1rem;
-    }
+  #content1,
+  #content2,
+  #content3  {
+    display: none;
   }
 `;

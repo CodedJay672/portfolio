@@ -9,9 +9,10 @@ import {
 } from "./components/containers";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/shared/Theme";
-import { GlobalStyles } from "./components/shared/GlobalStyles";
+
 import { GoHome } from "./components/shared/ui";
 import { useEffect, useState } from "react";
+import { GlobalStyled } from "./Global";
 
 function App() {
   const [showHome, setShowHome] = useState<boolean>(false);
@@ -44,7 +45,7 @@ function App() {
       <Footer />
 
       {/* global styling here*/}
-      <GlobalStyles />
+      <GlobalStyled />
     </ThemeProvider>
   );
 }

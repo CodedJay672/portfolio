@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import { Div, H1, Img, P } from "../styles";
 import {
   ProjectCard,
@@ -122,6 +122,7 @@ export const ProjectDetails: React.FC<{
   link: string;
   github: string;
 }> = ({ imageUrl, title, desc, tech, link, github }) => {
+  const id = useId();
   return (
     <>
       <ProjectCard>
@@ -169,6 +170,7 @@ export const ProjectDetails: React.FC<{
                 $flex="flex"
                 $justify-content="center"
                 $align-items="center"
+                key={id + Math.random()}
               >
                 <P
                   $size="10px"

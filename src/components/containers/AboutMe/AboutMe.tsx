@@ -1,10 +1,17 @@
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { Div, Img, P } from "../../shared/styles";
 import { SectionTitle } from "../../shared/ui";
-import { Span } from "./AboutMeStyles";
+import { AboutMeContent, Input, Span } from "./AboutMeStyles";
 import { PiInstagramLogoFill, PiLinkedinLogoFill } from "react-icons/pi";
+import { useState } from "react";
 
 const AboutMe = () => {
+  const [selectedTab, setSelectedTab] = useState("summary");
+
+  const handleChange = (e: any) => {
+    setSelectedTab(e.target.value);
+  };
+
   return (
     <Div
       id="about"
@@ -45,59 +52,95 @@ const AboutMe = () => {
             $gap="6px"
             $margin="0 0 20px 0"
           >
-            <Div
-              $width="200px"
-              $height="44px"
-              $background-color=" #04b5dd1a"
-              $flex="flex"
-              $justify-content="center"
-              $align-items="center"
-              $border-radius="44px"
-            >
-              <Span>About</Span>
-            </Div>
+            <Input
+              type="radio"
+              id="summary"
+              name="about-me"
+              value="summary"
+              onChange={handleChange}
+              checked={selectedTab === "summary"}
+            />
+            <Span as="label" htmlFor="summary">
+              About
+            </Span>
 
-            <Div
-              $width="200px"
-              $height="44px"
-              $flex="flex"
-              $justify-content="center"
-              $align-items="center"
-              $border-radius="44px"
-            >
-              <Span>Education</Span>
-            </Div>
+            <Input
+              type="radio"
+              id="education"
+              name="about-me"
+              value="education"
+              onChange={handleChange}
+              checked={selectedTab === "education"}
+            />
+            <Span as="label" htmlFor="education">
+              Education
+            </Span>
 
-            <Div
-              $width="200px"
-              $height="44px"
-              $flex="flex"
-              $justify-content="center"
-              $align-items="center"
-              $border-radius="44px"
-            >
-              <Span>Hobbies</Span>
-            </Div>
+            <Input
+              type="radio"
+              id="hobbies"
+              name="about-me"
+              value="hobbies"
+              onChange={handleChange}
+              checked={selectedTab === "hobbies"}
+            />
+            <Span as="label" htmlFor="hobbies">
+              Hobbies
+            </Span>
           </Div>
-          <P $size="14px" $weight="200" $line-height="24px" $color="#3c3e67">
-            My name is Emmanuel Ugoh, and I am passionate about crafting
+
+          <Div id="content1">
+            <AboutMeContent
+              content="My name is Emmanuel Ugoh, and I am passionate about crafting
             exceptional user experiences as a Front-End Web Developer. With over
             3 years of hands-on experience in the industry, I currently thrive
             in my role at Sekure, where I contribute to building intuitive
             interfaces that drive user engagement and satisfaction.
-          </P>
-          <P $size="14px" $weight="200" $line-height="24px" $color="#3c3e67">
             Previously, I had the opportunity to work remotely for Tech64, an
             African startup. This experience not only sharpened my technical
             skills but also enriched my understanding of professional standards
             in web development and the nuances of remote collaboration.
-          </P>
-          <P $size="14px" $weight="200" $line-height="24px" $color="#3c3e67">
             Having completed an intership with ALX Africa, I have experienced
             first-hand collaboration with team mates and peers around Africa,
             working on projects and through Git and Github. This experience has
-            opened my eyes to the endless possibilities of remote working.
-          </P>
+            opened my eyes to the endless possibilities of remote working."
+            />
+          </Div>
+          {/* <Div id="content2">
+            <AboutMeContent
+              content="My name is Emmanuel Ugoh, and I am passionate about crafting
+            exceptional user experiences as a Front-End Web Developer. With over
+            3 years of hands-on experience in the industry, I currently thrive
+            in my role at Sekure, where I contribute to building intuitive
+            interfaces that drive user engagement and satisfaction.
+            Previously, I had the opportunity to work remotely for Tech64, an
+            African startup. This experience not only sharpened my technical
+            skills but also enriched my understanding of professional standards
+            in web development and the nuances of remote collaboration.
+            Having completed an intership with ALX Africa, I have experienced
+            first-hand collaboration with team mates and peers around Africa,
+            working on projects and through Git and Github. This experience has
+            opened my eyes to the endless possibilities of remote working."
+            />
+          </Div> */}
+          {/* <Div id="content3">
+            <AboutMeContent
+              content="My name is Emmanuel Ugoh, and I am passionate about crafting
+            exceptional user experiences as a Front-End Web Developer. With over
+            3 years of hands-on experience in the industry, I currently thrive
+            in my role at Sekure, where I contribute to building intuitive
+            interfaces that drive user engagement and satisfaction.
+            Previously, I had the opportunity to work remotely for Tech64, an
+            African startup. This experience not only sharpened my technical
+            skills but also enriched my understanding of professional standards
+            in web development and the nuances of remote collaboration.
+            Having completed an intership with ALX Africa, I have experienced
+            first-hand collaboration with team mates and peers around Africa,
+            working on projects and through Git and Github. This experience has
+            opened my eyes to the endless possibilities of remote working."
+            />
+          </Div> */}
+
           <Div $flex="flex" $gap="2px" $margin="10px 0 0 0">
             <RiFacebookBoxFill size={32} color="#E9E9E9" />
             <PiLinkedinLogoFill size={32} color="#E9E9E9" />

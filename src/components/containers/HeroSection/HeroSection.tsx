@@ -48,7 +48,7 @@ const HeroSection = () => {
               $border-radius="10px"
               $border="1px solid #0F172A"
               $color="#0F172A"
-              $hover="#D1D5DB"
+              $hover="#3c3e670a"
               as="a"
               href="#about"
               $display="flex"

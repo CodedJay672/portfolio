@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   width: 100%;
-  max-width: 1600px;
   position: relative;
   padding: 1rem 160px;
 
