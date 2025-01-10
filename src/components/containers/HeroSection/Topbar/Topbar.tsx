@@ -18,9 +18,6 @@ const Topbar = () => {
         <NavLink href="#projects" role="navigation">
           PROJECTS
         </NavLink>
-        <NavLink href="#blogs" role="navigation">
-          BLOGS
-        </NavLink>
         <NavLink href="#experience" role="navigation">
           EXPERIENCE
         </NavLink>

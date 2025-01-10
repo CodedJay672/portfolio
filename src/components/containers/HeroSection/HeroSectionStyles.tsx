@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   max-width: 1600px;
   position: relative;
   height: 100dvh;
+  max-height: 1080px;
   padding: 1rem 160px;
 
   &::before {

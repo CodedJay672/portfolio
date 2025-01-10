@@ -5,11 +5,17 @@ export const P = styled.p<{
   "$line-height": string;
   $weight: string;
   $color: string;
+  $truncate?: number;
 }>`
   line-height: ${(props) => props["$line-height"]};
   font-size: ${(props) => props.$size};
   font-weight: ${(props) => props.$weight};
   color: ${(props) => props.$color};
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: ${(props) => props.$truncate ?? props.$truncate};
+  text-overflow: ellipsis;
 `;
 
 export const Div = styled.div<{

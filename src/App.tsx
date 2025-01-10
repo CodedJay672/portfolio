@@ -1,6 +1,5 @@
 import {
   AboutMe,
-  Blogs,
   ContactMe,
   Experience,
   Footer,
@@ -20,7 +19,6 @@ function App() {
       <Experience />
       <Skills />
       <Projects />
-      <Blogs />
       <ContactMe />
       <Footer />
 

@@ -1,5 +1,11 @@
 import React from "react";
 import { Div, H1, Img, P } from "../styles";
+import {
+  ProjectCard,
+  ProjectImg,
+  ProjectLink,
+  Span,
+} from "../../containers/Projects/ProjectStyles";
 
 export const SectionTitle: React.FC<{ text: string }> = ({ text }) => {
   return (
@@ -73,5 +79,147 @@ export const ExperienceCard: React.FC<{
         </P>
       </Div>
     </Div>
+  );
+};
+
+export const SkillsCard: React.FC<{ img: string; skill: string }> = ({
+  img,
+  skill,
+}) => {
+  return (
+    <Div
+      $width="176px"
+      $height="100px"
+      $border="1px dashed #E9E9E9"
+      $border-radius="10px"
+      $flex="flex"
+      $flex-direction="column"
+      $justify-content="center"
+      $align-items="center"
+    >
+      <Div $width="32px" $height="32px">
+        <Img
+          src={img}
+          alt="skill img"
+          $width="100%"
+          $height="100%"
+          $object-fit="contain"
+        />
+      </Div>
+      <P $size="16px" $weight="300" $color="#0F172A" $line-height="24px">
+        {skill}
+      </P>
+    </Div>
+  );
+};
+
+export const ProjectDetails: React.FC<{
+  imageUrl: string;
+  title: string;
+  desc: string;
+  tech: string[];
+  link: string;
+  github: string;
+}> = ({ imageUrl, title, desc, tech, link, github }) => {
+  return (
+    <>
+      <ProjectCard>
+        <Div $width="100%" $overflow="hidden">
+          <ProjectImg
+            src={imageUrl}
+            alt="project-img"
+            $width="100%"
+            $height="100%"
+            $object-fit="contain"
+          />
+        </Div>
+        <Div
+          $padding="0 10px"
+          $flex="flex"
+          $flex-direction="column"
+          $justify-content="space-between"
+          $align-items="space-evenly"
+        >
+          <H1 $size="16px" $weight="600" $leading="31px">
+            {title}
+          </H1>
+          <P
+            $size="12.4px"
+            $line-height="21px"
+            $color="#545454"
+            $weight="300"
+            $truncate={4}
+          >
+            {desc}
+          </P>
+          <Span>Tech Stack</Span>
+          <Div
+            $flex="flex"
+            $gap="2px"
+            $justify-content="center"
+            $align-items="center"
+            $margin="6px 0"
+          >
+            {tech.map((item) => (
+              <Div
+                $padding="5px 9px"
+                $border="1px solid #E9E9E9"
+                $border-radius="4px"
+                $flex="flex"
+                $justify-content="center"
+                $align-items="center"
+              >
+                <P
+                  $size="10px"
+                  $weight="300"
+                  $line-height="19.2px"
+                  $color="#545454"
+                >
+                  {item}
+                </P>
+              </Div>
+            ))}
+          </Div>
+
+          <Div $flex="flex" $gap="3px">
+            <ProjectLink
+              $leading="24px"
+              $weight="300"
+              $size="10.4px"
+              $bg="#3c3e67"
+              $color="#fff"
+              href={`https://${link}`}
+              target="_blank"
+            >
+              <Img
+                src="/assets/gotolink.png"
+                alt="visit link"
+                $width="16px"
+                $height="16px"
+                $object-fit="contain"
+              />{" "}
+              Live
+            </ProjectLink>
+            <ProjectLink
+              $leading="24px"
+              $weight="300"
+              $size="10.4px"
+              $bg="#D1D5DB"
+              href={`https://${github}`}
+              target="_blank"
+            >
+              <Img
+                src="/assets/visitgit.png"
+                alt="visit link"
+                $width="16px"
+                $height="16px"
+                $object-fit="contain"
+              />{" "}
+              Github
+            </ProjectLink>
+          </Div>
+        </Div>
+      </ProjectCard>
+    </>
   );
 };

@@ -25,7 +25,7 @@ const Experience = () => {
         />
 
         <ExperienceCard
-          imageUrl="/asset/profile.jpg"
+          imageUrl="/assets/hbhlogo.jpg"
           company="Highbridge homes"
           position="IT Officer"
           role="full-time"
