@@ -20,6 +20,7 @@ Having graduated from ALX Africa, I have worked with teams around Africa, buildi
 - JS
 - ReactJS
 - NextJS
+- Typescript
 - TailwindCSS
 - Bootstrap
 - Styled Components
