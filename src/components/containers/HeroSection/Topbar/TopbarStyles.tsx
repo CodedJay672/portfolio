@@ -5,7 +5,6 @@ export const Nav = styled.section`
   display: flex;
   justify-content: space-between;
   align-items- center;
-  gap: 150px;
 `;
 
 export const Logo = styled.div`
@@ -27,7 +26,6 @@ export const LogoTitle = styled.span`
 
 export const NavMenu = styled.section`
   display: flex;
-  flex: 1;
   justify-content: space-evenly;
   align-items: center;
 `;

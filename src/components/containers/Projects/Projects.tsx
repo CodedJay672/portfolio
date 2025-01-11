@@ -46,6 +46,14 @@ const Projects = () => {
           link="vanbook.app"
           github="github.com/WakHerv7/vanbook-react"
         />
+        <ProjectDetails
+          imageUrl="/assets/portfolio.png"
+          title="Manny Dev - Portfolio Page"
+          desc="This is a simple webpage with a mordern design. This project showcases the beauty of simplcity. It contains informtion about me, my experience, some projects I have worked on and my contact information."
+          tech={["React", "styled Components", "React Icons"]}
+          link=""
+          github="github.com/WakHerv7/vanbook-react"
+        />
       </ProjectDiv>
     </Div>
   );

@@ -65,7 +65,6 @@ const Skills = () => {
           <SkillsCard img="/assets/js.svg" skill="Javascript" />
           <SkillsCard img="/assets/redux.png" skill="Redux" />
           <SkillsCard img="/assets/typescript.svg" skill="Typescript" />
-          <SkillsCard img="/assets/swiperjs.png" skill="Swiper.js" />
           <SkillsCard img="/assets/nextjs.png" skill="NextJs" />
         </SkillDiv>
       )}

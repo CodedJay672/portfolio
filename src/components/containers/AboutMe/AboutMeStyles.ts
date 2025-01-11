@@ -36,3 +36,21 @@ export const ContentDiv = styled.section`
   height: 300px;
   overflow: auto;
 `;
+
+export const LinkedInFollow = styled.a`
+  width: 50%;
+  padding: 6px;
+  margin-top: 16px;
+  color: #fff;
+  font-size: 14.6px;
+  font-weight: 400p;
+  background-color: #0f172a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  border: none;
+  border-radius: 30px;
+`;

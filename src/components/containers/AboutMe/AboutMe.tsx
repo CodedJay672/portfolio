@@ -1,16 +1,12 @@
-import { RiFacebookBoxFill } from "react-icons/ri";
+import { RiAddLine, RiFacebookBoxFill } from "react-icons/ri";
 import { Div, Img } from "../../shared/styles";
 import { Education, Hobbies, SectionTitle, Summary } from "../../shared/ui";
-import { ContentDiv, Input, Span } from "./AboutMeStyles";
+import { ContentDiv, Input, LinkedInFollow, Span } from "./AboutMeStyles";
 import { PiInstagramLogoFill, PiLinkedinLogoFill } from "react-icons/pi";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 const AboutMe = () => {
   const [selectedTab, setSelectedTab] = useState("summary");
-
-  useEffect(() => {
-    console.log(selectedTab + "-content");
-  }, [selectedTab]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSelectedTab(e.target.value);
@@ -44,7 +40,13 @@ const AboutMe = () => {
             $object-fit="cover"
           />
         </Div>
-        <Div $width="50%">
+        <Div
+          $width="50%"
+          $flex="flex"
+          $flex-direction="column"
+          $justify-content="center"
+          $align-items="center"
+        >
           <Div
             $width="100%"
             $padding="6px"
@@ -109,12 +111,12 @@ const AboutMe = () => {
               <Hobbies />
             </ContentDiv>
           )}
-
-          <Div $flex="flex" $gap="2px" $margin="10px 0 0 0">
-            <RiFacebookBoxFill size={32} color="#3c3e67a1" />
-            <PiLinkedinLogoFill size={32} color="#3c3e67a1" />
-            <PiInstagramLogoFill size={32} color="#3c3e67a1" />
-          </Div>
+          <LinkedInFollow
+            href="https://LinkedIn.com/in/emmanueljoel672"
+            target="_blank"
+          >
+            <RiAddLine size={20} color="#fff" /> Follow on LinkedIn
+          </LinkedInFollow>
         </Div>
       </Div>
     </Div>

@@ -1,7 +1,7 @@
-import { HiMiniCalendar } from "react-icons/hi2";
 import { Button, Div, Img, P } from "../../shared/styles";
 import { HeroContainer, HeroText, Wrapper } from "./HeroSectionStyles";
 import Topbar from "./Topbar/Topbar";
+import { BiPaperPlane } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
@@ -39,8 +39,11 @@ const HeroSection = () => {
               $align-items="center"
               $gap="3px"
               $hover="#3c3e67"
+              as="a"
+              href="https://wa.com/+2349032705515"
+              target="_blank"
             >
-              <HiMiniCalendar size="20" color="#fff" /> Schedule a meeting
+              <BiPaperPlane size="20" color="#fff" /> Shoot me a DM
             </Button>
             <Button
               $width="98px"

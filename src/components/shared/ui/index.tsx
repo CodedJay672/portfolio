@@ -189,7 +189,7 @@ export const ProjectDetails: React.FC<{
               $leading="24px"
               $weight="300"
               $size="10.4px"
-              $bg="#3c3e67"
+              $bg="#0F172A"
               $color="#fff"
               href={`https://${link}`}
               target="_blank"

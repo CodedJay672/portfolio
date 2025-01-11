@@ -2,7 +2,11 @@ import { HiMail, HiPhoneIncoming } from "react-icons/hi";
 import { Div, Img, P } from "../../shared/styles";
 import { SectionTitle } from "../../shared/ui";
 import { ContactLink, HeadingText, SubtleText } from "./ContactStyles";
-import { RiFacebookBoxLine, RiLinkedinBoxFill } from "react-icons/ri";
+import {
+  RiFacebookBoxFill,
+  RiGithubFill,
+  RiLinkedinBoxFill,
+} from "react-icons/ri";
 
 const ContactMe = () => {
   return (
@@ -51,7 +55,7 @@ const ContactMe = () => {
             $justify-content="start"
             $align-items="center"
           >
-            <RiFacebookBoxLine size={20} color="#3c3e67" />:{" "}
+            <RiFacebookBoxFill size={20} color="#3c3e67" />:{" "}
             <ContactLink
               href="https://web.facebook.com/Manny6456"
               target="_blank"
@@ -71,6 +75,17 @@ const ContactMe = () => {
               target="_blank"
             >
               Emmanuel Joel
+            </ContactLink>
+          </Div>
+          <Div
+            $padding="3px"
+            $flex="flex"
+            $justify-content="start"
+            $align-items="center"
+          >
+            <RiGithubFill size={20} color="#3c3e67" />:{" "}
+            <ContactLink href="https://github.com/codedjay672" target="_blank">
+              Codedjay672
             </ContactLink>
           </Div>
         </Div>

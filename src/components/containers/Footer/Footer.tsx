@@ -1,5 +1,6 @@
 import {
   RiFacebookBoxLine,
+  RiGithubLine,
   RiInstagramLine,
   RiLinkedinBoxLine,
   RiTwitterLine,
@@ -58,6 +59,9 @@ const Footer = () => {
             target="_blank"
           >
             <RiLinkedinBoxLine color="#3c3e67af" size={14} />
+          </FooterLink>
+          <FooterLink href="https://github.com/codedjay672" target="_blank">
+            <RiGithubLine color="#3c3e67af" size={14} />
           </FooterLink>
         </Div>
       </Div>
