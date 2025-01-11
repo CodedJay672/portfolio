@@ -9,6 +9,7 @@ export const GlobalStyled = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    transition: .2s ease-in;
   }
 
   a {

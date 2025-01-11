@@ -98,7 +98,7 @@ export const SkillsCard: React.FC<{ img: string; skill: string }> = ({
       $justify-content="center"
       $align-items="center"
     >
-      <Div $width="32px" $height="32px">
+      <Div $width="48px" $height="48px">
         <Img
           src={img}
           alt="skill img"
