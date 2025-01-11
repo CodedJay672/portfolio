@@ -1,8 +1,7 @@
-import { RiAddLine, RiFacebookBoxFill } from "react-icons/ri";
+import { RiAddLine } from "react-icons/ri";
 import { Div, Img } from "../../shared/styles";
 import { Education, Hobbies, SectionTitle, Summary } from "../../shared/ui";
 import { ContentDiv, Input, LinkedInFollow, Span } from "./AboutMeStyles";
-import { PiInstagramLogoFill, PiLinkedinLogoFill } from "react-icons/pi";
 import { ChangeEvent, useState } from "react";
 
 const AboutMe = () => {
