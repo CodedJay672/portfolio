@@ -8,7 +8,12 @@ const ContactMe = () => {
   return (
     <Div $padding="1rem 160px 3rem 160px" id="contact">
       <SectionTitle text="Let's Connect" />
-      <Div $flex="flex" $margin="20px 0" $justify-content="space-evenly">
+      <Div
+        $flex="flex"
+        $margin="20px 0"
+        $justify-content="space-evenly"
+        $align-items="center"
+      >
         <Div $width="40%">
           <SubtleText>Hey, join my network.</SubtleText>
           <HeadingText>There's so much we can achieve together.</HeadingText>

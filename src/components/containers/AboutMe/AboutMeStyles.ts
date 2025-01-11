@@ -30,9 +30,9 @@ export const Input = styled.input`
     transition: 0.2s ease-in;
   }
 `;
-export const AboutMeContent = styled.p`
-  line-height: 24px;
-  font-size: 14px;
-  font-weight: 200;
-  color: #3c3e67;
+
+export const ContentDiv = styled.section`
+  width: 100%;
+  height: 300px;
+  overflow: auto;
 `;

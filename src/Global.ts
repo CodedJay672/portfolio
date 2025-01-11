@@ -26,13 +26,6 @@ export const GlobalStyled = createGlobalStyle`
     background-color: #fff;
     font-variation-settings: "slnt" 0;
     font-optical-sizing: auto;
-    background-olor: #fff;
     position: relative;
-  }
-    
-  #content1,
-  #content2,
-  #content3  {
-    display: none;
   }
 `;

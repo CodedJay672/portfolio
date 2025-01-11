@@ -66,6 +66,7 @@ export const Div = styled.div<{
   bottom: ${(props) => props.$bottom ?? props.$bottom};
   left: ${(props) => props.$left ?? props.$left};
   display: ${(props) => props.$display ?? props.$display};
+  scroll-behavior: smooth;
 `;
 
 export const Img = styled.img<{

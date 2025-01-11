@@ -1,12 +1,25 @@
-import { HiChevronDoubleRight } from "react-icons/hi";
+import { Div, Img } from "../../../shared/styles";
 import { Logo, LogoTitle, NavLink, NavMenu, Resume, Nav } from "./TopbarStyles";
 
 const Topbar = () => {
   return (
     <Nav id="home">
       <Logo as="a" href="/">
-        <HiChevronDoubleRight size={30} color="#0F172A" />
-        <LogoTitle>manny dev</LogoTitle>
+        <Div
+          $width="45px"
+          $height="45px"
+          $border-radius="50%"
+          $overflow="hidden"
+        >
+          <Img
+            src="/assets/profile.jpg"
+            alt="logo"
+            $width="100%"
+            $height="100%"
+            $object-fit="cover"
+          />
+        </Div>
+        <LogoTitle>Manny Dev</LogoTitle>
       </Logo>
       <NavMenu>
         <NavLink href="#about" role="navigation">

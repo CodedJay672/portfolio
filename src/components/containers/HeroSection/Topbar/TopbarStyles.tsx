@@ -18,11 +18,11 @@ export const Logo = styled.div`
 export const LogoTitle = styled.span`
   font-size: 1rem;
   margin-left: 6px;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
-  align-items: center;
+  flex: 1;
+  align-items: start;
   font-wrap: wrap;
-  align-text: center;
 `;
 
 export const NavMenu = styled.section`

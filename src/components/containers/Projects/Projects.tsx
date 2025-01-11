@@ -10,7 +10,7 @@ const Projects = () => {
         $flex="flex"
         $width="100%"
         $gap="30px"
-        $justify-content="start"
+        $justify-content="space-evenly"
         $align-items="center"
         $margin="40px auto"
       >
