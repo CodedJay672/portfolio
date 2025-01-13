@@ -1,19 +1,11 @@
-import { Div } from "../../shared/styles";
 import { ProjectDetails, SectionTitle } from "../../shared/ui";
-import { ProjectDiv } from "./ProjectStyles";
+import { ProjectDiv, ProjectWrapper } from "./ProjectStyles";
 
 const Projects = () => {
   return (
-    <Div $width="100%" $padding="5rem 160px" id="projects">
+    <ProjectWrapper id="projects">
       <SectionTitle text="Projects" />
-      <ProjectDiv
-        $flex="flex"
-        $width="100%"
-        $gap="30px"
-        $justify-content="space-evenly"
-        $align-items="center"
-        $margin="40px auto"
-      >
+      <ProjectDiv>
         <ProjectDetails
           imageUrl="/assets/cleanbeautifulproperties.png"
           title="CleanBeautifulProperties - Realty Landingpage"
@@ -55,7 +47,7 @@ const Projects = () => {
           github="github.com/WakHerv7/vanbook-react"
         />
       </ProjectDiv>
-    </Div>
+    </ProjectWrapper>
   );
 };
 

@@ -13,6 +13,7 @@ import { theme } from "./components/shared/Theme";
 import { GoHome } from "./components/shared/ui";
 import { useEffect, useState } from "react";
 import { GlobalStyled } from "./Global";
+import Topbar from "./components/containers/HeroSection/Topbar/Topbar";
 
 function App() {
   const [showHome, setShowHome] = useState<boolean>(false);
@@ -36,6 +37,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {showHome && <GoHome />}
+      <Topbar />
       <HeroSection />
       <AboutMe />
       <Experience />

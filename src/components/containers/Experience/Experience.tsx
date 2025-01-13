@@ -1,18 +1,11 @@
-import { Div } from "../../shared/styles";
 import { ExperienceCard, SectionTitle } from "../../shared/ui";
+import { ExperienceContentDiv, ExperienceWrapper } from "./ExperienceStyles";
 
 const Experience = () => {
   return (
-    <Div $padding="5rem 160px" id="experience">
+    <ExperienceWrapper id="experience">
       <SectionTitle text="Experience" />
-      <Div
-        $flex="flex"
-        $justify-content="center"
-        $align-items="center"
-        $gap="10px"
-        $width="100%"
-        $margin="46px 0 0 0"
-      >
+      <ExperienceContentDiv>
         <ExperienceCard
           imageUrl="/assets/sekure.jpeg"
           company="Sekure"
@@ -44,8 +37,8 @@ const Experience = () => {
           description="Worked on Vanbook. An online school management system which manages financial as well as academic activities both for the students, management staff and the parents. I was responsible for working on mordern user interfaces which provide easy access to users allowing them to navigate around the application with ease."
           type="Remote"
         />
-      </Div>
-    </Div>
+      </ExperienceContentDiv>
+    </ExperienceWrapper>
   );
 };
 

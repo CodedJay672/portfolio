@@ -6,20 +6,11 @@ import {
   RiTwitterLine,
 } from "react-icons/ri";
 import { Div, P } from "../../shared/styles";
-import { FooterLink, Hr } from "./FooterStyles";
+import { FooterLink, FooterWrapper, Hr } from "./FooterStyles";
 
 const Footer = () => {
   return (
-    <Div
-      $padding="4rem 160px"
-      $flex="flex"
-      $flex-direction="column"
-      $justify-content="center"
-      $align-items="center"
-      $background-color="#3c3e670a"
-      $width="100%"
-      $gap="44px"
-    >
+    <FooterWrapper>
       <Div
         $flex="flex"
         $justify-content="space-between"
@@ -69,7 +60,7 @@ const Footer = () => {
       <P $size="11.4px" $weight="300" $color="#545454" $line-height="21.5px">
         {`Copyright © ${new Date().getFullYear()} by Emmanuel Ugoh.`}
       </P>
-    </Div>
+    </FooterWrapper>
   );
 };
 

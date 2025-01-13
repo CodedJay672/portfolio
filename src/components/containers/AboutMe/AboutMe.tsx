@@ -1,7 +1,16 @@
 import { RiAddLine } from "react-icons/ri";
 import { Div, Img } from "../../shared/styles";
 import { Education, Hobbies, SectionTitle, Summary } from "../../shared/ui";
-import { ContentDiv, Input, LinkedInFollow, Span } from "./AboutMeStyles";
+import {
+  AboutContentDiv,
+  AboutContentSection,
+  AboutWrapper,
+  ContentDiv,
+  ImageDiv,
+  Input,
+  LinkedInFollow,
+  Span,
+} from "./AboutMeStyles";
 import { ChangeEvent, useState } from "react";
 
 const AboutMe = () => {
@@ -12,25 +21,10 @@ const AboutMe = () => {
   };
 
   return (
-    <Div
-      id="about"
-      $width="100%"
-      $height="710.42px"
-      $flex="flex"
-      $flex-direction="column"
-      as="section"
-      $padding="5rem 160px"
-    >
+    <AboutWrapper id="about">
       <SectionTitle text="About Me" />
-      <Div
-        $width="100%"
-        $flex="flex"
-        $gap="50px"
-        $grow="flex-1"
-        $overflow="hidden"
-        $margin="46px 0 0 0"
-      >
-        <Div $width="50%" $flex="flex" $grow="flex-1" $overflow="hidden">
+      <AboutContentSection>
+        <ImageDiv>
           <Img
             src="/assets/profile.jpg"
             alt="work space"
@@ -38,14 +32,8 @@ const AboutMe = () => {
             $height="100%"
             $object-fit="cover"
           />
-        </Div>
-        <Div
-          $width="50%"
-          $flex="flex"
-          $flex-direction="column"
-          $justify-content="center"
-          $align-items="center"
-        >
+        </ImageDiv>
+        <AboutContentDiv>
           <Div
             $width="100%"
             $padding="6px"
@@ -116,9 +104,9 @@ const AboutMe = () => {
           >
             <RiAddLine size={20} color="#fff" /> Follow on LinkedIn
           </LinkedInFollow>
-        </Div>
-      </Div>
-    </Div>
+        </AboutContentDiv>
+      </AboutContentSection>
+    </AboutWrapper>
   );
 };
 

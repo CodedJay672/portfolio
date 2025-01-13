@@ -1,5 +1,18 @@
 import styled from "styled-components";
-import { Div, Img } from "../../shared/styles";
+import { Img } from "../../shared/styles";
+
+export const ProjectWrapper = styled.section`
+  width: 100%;
+  padding: 5rem 160px;
+
+  @media screen and (max-width: 1040px) {
+    padding: 4rem 80px;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 4rem 43px;
+  }
+`;
 
 export const ProjectCard = styled.div`
   width: 300.33px;
@@ -27,8 +40,21 @@ export const Span = styled.span`
   margin-top: 10px;
 `;
 
-export const ProjectDiv = styled(Div)`
+export const ProjectDiv = styled.div`
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 40px auto;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+  }
 `;
 
 export const ProjectLink = styled.a<{

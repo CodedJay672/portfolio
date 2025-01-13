@@ -1,5 +1,60 @@
 import styled from "styled-components";
 
+export const AboutWrapper = styled.section`
+  width: 100%;
+  height: 710.42px;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 160px;
+
+  @media screen and (max-width: 1040px) {
+    padding: 1rem 88px;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 33px;
+    height: auto;
+  }
+`;
+
+export const AboutContentSection = styled.section`
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex: flex-1;
+  overflow: hidden;
+  margin: 46px 0 0 0;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 33px;
+    overflow: scroll;
+  }
+`;
+
+export const ImageDiv = styled.div`
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+`;
+
+export const AboutContentDiv = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+`;
+
 export const ImgCover = styled.div`
   position: absolute;
   inset: 0;

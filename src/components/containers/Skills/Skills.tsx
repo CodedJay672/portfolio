@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { Div } from "../../shared/styles";
 import { SectionTitle, SkillsCard } from "../../shared/ui";
 import { Input, Span } from "../AboutMe/AboutMeStyles";
-import { SkillDiv } from "./SkillsStyles";
+import { SkillDiv, SkillsWrapper } from "./SkillsStyles";
 
 const Skills = () => {
   const [selectedTab, setSelectedTab] = useState("frontend");
@@ -12,17 +12,8 @@ const Skills = () => {
   };
 
   return (
-    <Div
-      $width="100%"
-      $padding="5rem 160px"
-      id="skills"
-      $flex="flex"
-      $flex-direction="column"
-      $justify-content="center"
-      $align-items="center"
-    >
+    <SkillsWrapper id="skills">
       <SectionTitle text="Skills" />
-
       <Div
         $width="30%"
         $padding="6px"
@@ -77,7 +68,7 @@ const Skills = () => {
           <SkillsCard img="/assets/npm.png" skill="NPM" />
         </SkillDiv>
       )}
-    </Div>
+    </SkillsWrapper>
   );
 };
 

@@ -1,7 +1,12 @@
 import { HiMail, HiPhoneIncoming } from "react-icons/hi";
 import { Div, Img, P } from "../../shared/styles";
 import { SectionTitle } from "../../shared/ui";
-import { ContactLink, HeadingText, SubtleText } from "./ContactStyles";
+import {
+  ContactLink,
+  ContactWrapper,
+  HeadingText,
+  SubtleText,
+} from "./ContactStyles";
 import {
   RiFacebookBoxFill,
   RiGithubFill,
@@ -10,7 +15,7 @@ import {
 
 const ContactMe = () => {
   return (
-    <Div $padding="1rem 160px 3rem 160px" id="contact">
+    <ContactWrapper id="contact">
       <SectionTitle text="Let's Connect" />
       <Div
         $flex="flex"
@@ -21,7 +26,7 @@ const ContactMe = () => {
         <Div $width="40%">
           <SubtleText>Hey, join my network.</SubtleText>
           <HeadingText>There's so much we can achieve together.</HeadingText>
-          <P $size="16px" $weight="300" $color="#0f172a" $line-height="2">
+          <P $size="16px" $weight="300" $color="#0f172a" $line-height="20px">
             In a world where your network is a determinant factor of your
             networth, I am on a mission of making high ticket connections with
             people of like mind. As an avid learner, I would love to learn from
@@ -105,7 +110,7 @@ const ContactMe = () => {
           />
         </Div>
       </Div>
-    </Div>
+    </ContactWrapper>
   );
 };
 

@@ -126,3 +126,24 @@ export const H1 = styled.h1<{
   line-height: ${(props) => props.$leading ?? props.$leading};
   word-spacing: ${(props) => props.$tracking ?? props.$tracking};
 `;
+
+export const HomeButton = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  background-color: #fff;
+  box-shadow: 2px 2px 30px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+`;
+
+export const HeadingTitle = styled.h1`
+  font-size: 1.3rem;
+  weight: 35.2px;
+  leading: 52.8px;
+`;

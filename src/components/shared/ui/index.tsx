@@ -1,5 +1,5 @@
 import React, { useId } from "react";
-import { Div, H1, Img, P } from "../styles";
+import { Div, H1, HeadingTitle, HomeButton, Img, P } from "../styles";
 import {
   ProjectCard,
   ProjectImg,
@@ -17,9 +17,7 @@ export const SectionTitle: React.FC<{ text: string }> = ({ text }) => {
       $justify-content="center"
       $align-items="center"
     >
-      <H1 $size="35.2px" $weight="35.2px" $leading="52.8px">
-        {text}
-      </H1>
+      <HeadingTitle>{text}</HeadingTitle>
     </Div>
   );
 };
@@ -45,10 +43,10 @@ export const ExperienceCard: React.FC<{
 }) => {
   return (
     <Div
-      $width="493px"
+      $width="500px"
       $height="195px"
       $flex="flex"
-      $padding="10px"
+      $padding="20px"
       $border="1px solid #E9E9E9"
       $border-radius="10px"
       $gap="10px"
@@ -229,22 +227,9 @@ export const ProjectDetails: React.FC<{
 
 export const GoHome = () => {
   return (
-    <Div
-      $width="40px"
-      $height="40px"
-      $border-radius="50%"
-      $position="fixed"
-      $bottom="90px"
-      $right="50px"
-      $shadow="2px 2px 30px 2px #000"
-      $flex="flex"
-      $justify-content="center"
-      $align-items="center"
-      as="a"
-      href="#home"
-    >
+    <HomeButton as="a" href="#home">
       <HiHome size={20} />
-    </Div>
+    </HomeButton>
   );
 };
 
@@ -284,6 +269,7 @@ export const Summary = () => {
     </P>
   );
 };
+
 export const Education = () => {
   return (
     <P $size="14.5px" $weight="300px" $line-height="20px" $color="#3c3e67">
@@ -323,6 +309,7 @@ export const Education = () => {
     </P>
   );
 };
+
 export const Hobbies = () => {
   return (
     <P $size="14.5px" $weight="300px" $line-height="20px" $color="#3c3e67">

@@ -1,12 +1,16 @@
-import { Button, Div, Img, P } from "../../shared/styles";
-import { HeroContainer, HeroText, Wrapper } from "./HeroSectionStyles";
-import Topbar from "./Topbar/Topbar";
+import { Button, Img, P } from "../../shared/styles";
+import {
+  HeroButtonsContainer,
+  HeroContainer,
+  HeroImgContainer,
+  HeroText,
+  Wrapper,
+} from "./HeroSectionStyles";
 import { BiPaperPlane } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
-    <Wrapper>
-      <Topbar />
+    <Wrapper id="home">
       <HeroContainer>
         <HeroText>
           <P $color="#545454" $size="24px" $line-height="36px" $weight="400">
@@ -21,13 +25,7 @@ const HeroSection = () => {
             mordern designs. Coding is my passion, and I excel at solving
             complex problems with creative solutions.
           </P>
-          <Div
-            $width="100%"
-            $height="100%"
-            $flex="flex"
-            $margin="33px 0"
-            $gap="6px"
-          >
+          <HeroButtonsContainer>
             <Button
               $width="190px"
               $height="44px"
@@ -60,19 +58,10 @@ const HeroSection = () => {
             >
               About Me
             </Button>
-          </Div>
+          </HeroButtonsContainer>
         </HeroText>
 
-        <Div
-          $width="450px"
-          $height="450px"
-          $flex="flex"
-          $justify-content="center"
-          $align-items="center"
-          $border="2px solid #3c3e67"
-          $border-radius="50%"
-          $overflow="hidden"
-        >
+        <HeroImgContainer>
           <Img
             src="/assets/profile.jpg"
             $height="100%"
@@ -80,7 +69,7 @@ const HeroSection = () => {
             $object-fit="cover"
             alt="display image"
           />
-        </Div>
+        </HeroImgContainer>
       </HeroContainer>
     </Wrapper>
   );
