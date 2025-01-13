@@ -53,3 +53,11 @@ export const FooterContainer = styled.div`
     gap: 20px;
   }
 `;
+
+export const FooterText = styled.p`
+  font-size: 13.8px;
+  font-weight: 400;
+  color: #3c3e67af;
+  line-height: 24px;
+  text-align: center;
+`;

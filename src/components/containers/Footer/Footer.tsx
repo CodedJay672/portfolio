@@ -6,21 +6,28 @@ import {
   RiTwitterLine,
 } from "react-icons/ri";
 import { Div, P } from "../../shared/styles";
-import { FooterContainer, FooterLink, FooterWrapper, Hr } from "./FooterStyles";
+import {
+  FooterContainer,
+  FooterLink,
+  FooterText,
+  FooterWrapper,
+  Hr,
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <Div $width="400px">
-          <P
-            $size="13.8px"
-            $weight="400"
-            $color="#3c3e67af"
-            $line-height="24px"
-          >
-            The best way to predict the future is to invent it -- Alan Kay
-          </P>
+        <Div
+          $width="400px"
+          $flex="flex"
+          $flex-direction="column"
+          $justify-content="center"
+          align-items="center"
+        >
+          <FooterText>
+            The best way to predict the future is to invent it <br />- Alan Kay
+          </FooterText>
         </Div>
         <Div
           $width="100px"

@@ -59,6 +59,21 @@ export const ContactLink = styled.a`
   font-size: 16px;
   font-weight: 400px;
   line-height: 24px;
+
+  @media screen and (max-width: 1040px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    line-height: 16px;
+  }
 `;
 
 export const ContactInfo = styled.div`
@@ -96,10 +111,9 @@ export const ContactImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow="hidden;
-
+  overflow: hidden;
 
   @media screen and (max-width: 480px) {
-    width: 100%;
+    display: none;
   }
 `;

@@ -172,7 +172,7 @@ export const HeadingTitle = styled.h1`
 `;
 
 export const SkillCard = styled.div`
-  width: 176px;
+  max-width: 176px;
   height: 100px;
   border: 1px dashed #e9e9e9;
   border-radius: 10px;
@@ -181,14 +181,15 @@ export const SkillCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 
   @media screen and (max-width: 900px) {
-    width: 150px;
+    min-width: 150px;
     height: 80px;
   }
 
   @media screen and (max-width: 480px) {
-    width: 120px;
+    min-width: 120px;
     height: 60px;
   }
 `;

@@ -20,7 +20,7 @@ export const Wrapper = styled.section`
 
     @media screen and (max-width: 1040px) {
       left: 110px;
-      top: 200px;
+      top: 100px;
     }
 
     @media screen and (max-width: 900px) {
