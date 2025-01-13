@@ -4,11 +4,11 @@ export const ExperienceWrapper = styled.section`
   padding: 5rem 160px;
 
   @media screen and (max-width: 1040px) {
-    padding: 2rem 80px;
+    padding: 5rem 80px;
   }
 
   @media screen and (max-width: 900px) {
-    padding: 2rem 33px;
+    padding: 5rem 33px;
   }
 `;
 

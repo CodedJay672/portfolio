@@ -3,6 +3,7 @@ import {
   ContentSummary,
   Div,
   ExperienceCardContainer,
+  ExperienceImage,
   H1,
   HeadingTitle,
   HomeButton,
@@ -50,15 +51,7 @@ export const ExperienceCard: React.FC<{
 }) => {
   return (
     <ExperienceCardContainer>
-      <Div $width="60px" $height="60px">
-        <Img
-          src={imageUrl}
-          alt="logo"
-          $width="100%"
-          $height="100%"
-          $object-fit="contain"
-        />
-      </Div>
+      <ExperienceImage src={imageUrl} alt="logo" />
       <Div $width="100%" $overflow="hidden">
         <H1 $size="20.8px" $weight="500" $leading="31.2px">
           {position}

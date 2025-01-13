@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.section`
   width: 100%;
-  height: 710.42px;
   display: flex;
   flex-direction: column;
-  padding: 5rem 160px;
+  padding: 8rem 160px;
 
   @media screen and (max-width: 1040px) {
-    padding: 1rem 88px;
+    padding: 5rem 88px;
   }
 
   @media screen and (max-width: 900px) {

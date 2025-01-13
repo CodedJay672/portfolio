@@ -230,9 +230,10 @@ export const ExperienceCardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #e9e9e9;
   border-radius: 10px;
+  gap: 20px;
 
   @media screen and (max-width: 900px) {
     flex-direction: row;
@@ -260,4 +261,10 @@ export const SectionTitleContainer = styled.div`
   @media screen and (max-width: 480px) {
     padding: 15px;
   }
+`;
+
+export const ExperienceImage = styled.img`
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 `;
