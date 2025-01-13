@@ -31,6 +31,11 @@ export const AboutContentSection = styled.section`
     padding: 0 33px;
     overflow: scroll;
   }
+
+  @media screen and (max-width: 900px) {
+    margin-top: 20px;
+    padding: 0;
+  }
 `;
 
 export const ImageDiv = styled.div`
@@ -40,6 +45,10 @@ export const ImageDiv = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 400px;
   }
 `;
 
@@ -52,7 +61,20 @@ export const AboutContentDiv = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
+    height: auto;
   }
+`;
+
+export const TabHeader = styled.div`
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #e9e9e9;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
 `;
 
 export const ImgCover = styled.div`
@@ -70,9 +92,21 @@ export const Span = styled.span`
   padding: 10px 20px;
   border-radius: 44px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 
   &:hover {
     background-color: #3c3e670a;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    font-size: 12px;
   }
 `;
 
@@ -108,4 +142,19 @@ export const LinkedInFollow = styled.a`
 
   border: none;
   border-radius: 30px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0f172a;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
 `;

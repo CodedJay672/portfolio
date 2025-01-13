@@ -1,8 +1,7 @@
 import { ChangeEvent, useState } from "react";
-import { Div } from "../../shared/styles";
 import { SectionTitle, SkillsCard } from "../../shared/ui";
 import { Input, Span } from "../AboutMe/AboutMeStyles";
-import { SkillDiv, SkillsWrapper } from "./SkillsStyles";
+import { SkillDiv, SkillsWrapper, SkillTabHeader } from "./SkillsStyles";
 
 const Skills = () => {
   const [selectedTab, setSelectedTab] = useState("frontend");
@@ -14,17 +13,7 @@ const Skills = () => {
   return (
     <SkillsWrapper id="skills">
       <SectionTitle text="Skills" />
-      <Div
-        $width="30%"
-        $padding="6px"
-        $border="1px solid #E9E9E9"
-        $border-radius="50px"
-        $flex="flex"
-        $justify-content="space-between"
-        $align-items="center"
-        $gap="6px"
-        $margin="10px 0"
-      >
+      <SkillTabHeader>
         <Input
           type="radio"
           id="frontend"
@@ -48,7 +37,7 @@ const Skills = () => {
         <Span as="label" htmlFor="tools">
           Tools
         </Span>
-      </Div>
+      </SkillTabHeader>
 
       {selectedTab === "frontend" && (
         <SkillDiv id="frontend">

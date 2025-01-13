@@ -14,15 +14,14 @@ export const ExperienceWrapper = styled.section`
 
 export const ExperienceContentDiv = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: felx-start;
   gap: 10px;
   width: 100%;
-  margin: 46px 0 0 0;
+  margin-top: 46px;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
-
     gap: 40px;
   }
 `;

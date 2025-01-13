@@ -6,7 +6,7 @@ export const ProjectWrapper = styled.section`
   padding: 5rem 160px;
 
   @media screen and (max-width: 1040px) {
-    padding: 4rem 80px;
+    padding: 4rem 33px;
   }
 
   @media screen and (max-width: 900px) {
@@ -20,6 +20,11 @@ export const ProjectCard = styled.div`
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   overflow: hidden;
+
+  @media screen and (max-width: 1040px), @media screen and (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const ProjectImg = styled(Img)`
@@ -49,9 +54,23 @@ export const ProjectDiv = styled.div`
   margin: 40px auto;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 1040px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    place-items: center;
+  }
+
   @media screen and (max-width: 900px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    place-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
     place-items: center;
   }

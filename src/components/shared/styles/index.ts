@@ -18,6 +18,21 @@ export const P = styled.p<{
   text-overflow: ellipsis;
 `;
 
+export const ContentSummary = styled.p`
+  font-size: 14.5px;
+  weight: 300px;
+  line-height: 20px;
+  color: #3c3e67;
+
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
+
 export const Div = styled.div<{
   $width?: string;
   $height?: string;
@@ -146,4 +161,102 @@ export const HeadingTitle = styled.h1`
   font-size: 1.3rem;
   weight: 35.2px;
   leading: 52.8px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+`;
+
+export const SkillCard = styled.div`
+  width: 176px;
+  height: 100px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    width: 150px;
+    height: 80px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 120px;
+    height: 60px;
+  }
+`;
+
+export const SkillImage = styled.img`
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  @media screen and (max-width: 900px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
+
+export const SkillTitle = styled.h3`
+  font-size: 16px;
+  font-weight: 500;
+  color: #3c3e67;
+  margin-top: 10px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+`;
+
+export const ExperienceCardContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+    gap: 32px;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+  flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+`;
+
+export const SectionTitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+  }
 `;

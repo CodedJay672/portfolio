@@ -1,5 +1,5 @@
 import { RiAddLine } from "react-icons/ri";
-import { Div, Img } from "../../shared/styles";
+import { Img } from "../../shared/styles";
 import { Education, Hobbies, SectionTitle, Summary } from "../../shared/ui";
 import {
   AboutContentDiv,
@@ -10,6 +10,7 @@ import {
   Input,
   LinkedInFollow,
   Span,
+  TabHeader,
 } from "./AboutMeStyles";
 import { ChangeEvent, useState } from "react";
 
@@ -34,17 +35,7 @@ const AboutMe = () => {
           />
         </ImageDiv>
         <AboutContentDiv>
-          <Div
-            $width="100%"
-            $padding="6px"
-            $border="1px solid #E9E9E9"
-            $border-radius="50px"
-            $flex="flex"
-            $justify-content="space-between"
-            $align-items="center"
-            $gap="6px"
-            $margin="0 0 20px 0"
-          >
+          <TabHeader>
             <Input
               type="radio"
               id="summary"
@@ -80,7 +71,7 @@ const AboutMe = () => {
             <Span as="label" htmlFor="hobbies">
               Hobbies
             </Span>
-          </Div>
+          </TabHeader>
 
           {selectedTab + "-content" === "summary-content" && (
             <ContentDiv id="summary-content">

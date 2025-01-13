@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   width: 100%;
-  position: relative;
   padding: 1rem 160px;
+  position: relative;
 
   &::before {
     position: absolute;
@@ -24,8 +24,12 @@ export const Wrapper = styled.section`
     }
 
     @media screen and (max-width: 900px) {
-      left: 110px;
-      top: 200px;
+      left: 10px;
+      top: 110px;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
     }
   }
 
@@ -49,7 +53,11 @@ export const Wrapper = styled.section`
 
     @media screen and (max-width: 900px) {
       left: 700px;
-      bottom: 110px;
+      bottom: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
     }
   }
 
@@ -81,6 +89,10 @@ export const HeroContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 16px;
   }
 `;
 
@@ -128,6 +140,12 @@ export const HeroImgContainer = styled.div`
     height: 300px;
     order: 1;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 200px;
+    height: 200px;
+    order: 1;
+  }
 `;
 
 export const HeroButtonsContainer = styled.div`
@@ -142,5 +160,43 @@ export const HeroButtonsContainer = styled.div`
     align-items: center;
     height: max-content;
     gap: 20px;
+  }
+`;
+
+export const HeroMainTitle = styled.h1`
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #3c3e67;
+  margin: 0;
+
+  @media screen and (max-width: 1040px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const HeroTitleDescription = styled.p`
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #3c3e67;
+  margin: 20px 0;
+
+  @media screen and (max-width: 1040px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
   }
 `;

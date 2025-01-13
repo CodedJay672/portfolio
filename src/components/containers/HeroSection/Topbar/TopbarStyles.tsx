@@ -16,6 +16,10 @@ export const Nav = styled.section`
   @media screen and (max-width: 1040px) {
    padding: 1rem 80px;
   }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 33px;
+  }
 `;
 
 export const Logo = styled.div`

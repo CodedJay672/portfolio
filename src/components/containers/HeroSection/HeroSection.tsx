@@ -3,7 +3,9 @@ import {
   HeroButtonsContainer,
   HeroContainer,
   HeroImgContainer,
+  HeroMainTitle,
   HeroText,
+  HeroTitleDescription,
   Wrapper,
 } from "./HeroSectionStyles";
 import { BiPaperPlane } from "react-icons/bi";
@@ -16,15 +18,13 @@ const HeroSection = () => {
           <P $color="#545454" $size="24px" $line-height="36px" $weight="400">
             Hi, i'm Emmanuel
           </P>
-          <P $color="#0F172A" $size="48px" $line-height="60px" $weight="700">
-            Front-End Web Developer
-          </P>
-          <P $color="#545454" $size="16px" $line-height="24px" $weight="300">
+          <HeroMainTitle>Front-End Web Developer</HeroMainTitle>
+          <HeroTitleDescription>
             I am Emmanuel Ugoh, a Front-End Web Developer with over three years
             of experience in crafting professional user experiences with clean,
             mordern designs. Coding is my passion, and I excel at solving
             complex problems with creative solutions.
-          </P>
+          </HeroTitleDescription>
           <HeroButtonsContainer>
             <Button
               $width="190px"

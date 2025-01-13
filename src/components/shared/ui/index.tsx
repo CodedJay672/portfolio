@@ -1,5 +1,18 @@
 import React, { useId } from "react";
-import { Div, H1, HeadingTitle, HomeButton, Img, P } from "../styles";
+import {
+  ContentSummary,
+  Div,
+  ExperienceCardContainer,
+  H1,
+  HeadingTitle,
+  HomeButton,
+  Img,
+  P,
+  SectionTitleContainer,
+  SkillCard,
+  SkillImage,
+  SkillTitle,
+} from "../styles";
 import {
   ProjectCard,
   ProjectImg,
@@ -10,15 +23,9 @@ import { HiHome } from "react-icons/hi";
 
 export const SectionTitle: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <Div
-      $width="100%"
-      $flex="flex"
-      $flex-direction="column"
-      $justify-content="center"
-      $align-items="center"
-    >
+    <SectionTitleContainer>
       <HeadingTitle>{text}</HeadingTitle>
-    </Div>
+    </SectionTitleContainer>
   );
 };
 
@@ -42,15 +49,7 @@ export const ExperienceCard: React.FC<{
   type,
 }) => {
   return (
-    <Div
-      $width="500px"
-      $height="195px"
-      $flex="flex"
-      $padding="20px"
-      $border="1px solid #E9E9E9"
-      $border-radius="10px"
-      $gap="10px"
-    >
+    <ExperienceCardContainer>
       <Div $width="60px" $height="60px">
         <Img
           src={imageUrl}
@@ -77,7 +76,7 @@ export const ExperienceCard: React.FC<{
           {description}
         </P>
       </Div>
-    </Div>
+    </ExperienceCardContainer>
   );
 };
 
@@ -86,29 +85,10 @@ export const SkillsCard: React.FC<{ img: string; skill: string }> = ({
   skill,
 }) => {
   return (
-    <Div
-      $width="176px"
-      $height="100px"
-      $border="1px dashed #E9E9E9"
-      $border-radius="10px"
-      $flex="flex"
-      $flex-direction="column"
-      $justify-content="center"
-      $align-items="center"
-    >
-      <Div $width="48px" $height="48px">
-        <Img
-          src={img}
-          alt="skill img"
-          $width="100%"
-          $height="100%"
-          $object-fit="contain"
-        />
-      </Div>
-      <P $size="16px" $weight="300" $color="#0F172A" $line-height="24px">
-        {skill}
-      </P>
-    </Div>
+    <SkillCard>
+      <SkillImage src={img} alt="skill img" />
+      <SkillTitle>{skill}</SkillTitle>
+    </SkillCard>
   );
 };
 
@@ -134,7 +114,7 @@ export const ProjectDetails: React.FC<{
           />
         </Div>
         <Div
-          $padding="0 10px"
+          $padding="10px"
           $flex="flex"
           $flex-direction="column"
           $justify-content="space-between"
@@ -235,7 +215,7 @@ export const GoHome = () => {
 
 export const Summary = () => {
   return (
-    <P $size="14.5px" $weight="300px" $line-height="20px" $color="#3c3e67">
+    <ContentSummary>
       HI,
       <br />
       <br />
@@ -266,13 +246,13 @@ export const Summary = () => {
       Management System which will manage the financial activities in schools,
       allowing the management to focus on more pressing issues like running the
       school affairs and imparting knowldge on the students.
-    </P>
+    </ContentSummary>
   );
 };
 
 export const Education = () => {
   return (
-    <P $size="14.5px" $weight="300px" $line-height="20px" $color="#3c3e67">
+    <ContentSummary>
       I am a graduate of Bayero University, Kano, Kano state, where I studied
       computer science in the department of computer science, Faculty of
       Computer Science and Information Technology (FCSIT).
@@ -306,13 +286,13 @@ export const Education = () => {
       <br />
       <br />I passed out of the NYSC in November 2022, and completed my
       internship in August 2023.
-    </P>
+    </ContentSummary>
   );
 };
 
 export const Hobbies = () => {
   return (
-    <P $size="14.5px" $weight="300px" $line-height="20px" $color="#3c3e67">
+    <ContentSummary>
       I love to travel, meet new friends, read, and code.
       <br />
       <br /> I enjoy board games like chess and scrabble and I love playing
@@ -340,6 +320,6 @@ export const Hobbies = () => {
       <br />I believe in the power of the subconscious. So whatever you want to
       achieve in life you have to first be obssessed with it, only then will
       everything, within and without, work for you to achieve it.
-    </P>
+    </ContentSummary>
   );
 };

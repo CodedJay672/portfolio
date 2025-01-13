@@ -1,7 +1,11 @@
 import { HiMail, HiPhoneIncoming } from "react-icons/hi";
-import { Div, Img, P } from "../../shared/styles";
+import { Div, Img } from "../../shared/styles";
 import { SectionTitle } from "../../shared/ui";
 import {
+  ContactDetails,
+  ContactDiv,
+  ContactImage,
+  ContactInfo,
   ContactLink,
   ContactWrapper,
   HeadingText,
@@ -17,22 +21,17 @@ const ContactMe = () => {
   return (
     <ContactWrapper id="contact">
       <SectionTitle text="Let's Connect" />
-      <Div
-        $flex="flex"
-        $margin="20px 0"
-        $justify-content="space-evenly"
-        $align-items="center"
-      >
-        <Div $width="40%">
+      <ContactDiv>
+        <ContactInfo>
           <SubtleText>Hey, join my network.</SubtleText>
           <HeadingText>There's so much we can achieve together.</HeadingText>
-          <P $size="16px" $weight="300" $color="#0f172a" $line-height="20px">
+          <ContactDetails>
             In a world where your network is a determinant factor of your
             networth, I am on a mission of making high ticket connections with
             people of like mind. As an avid learner, I would love to learn from
             you. I am a very jovial and easy going dude, you would love my
             company.
-          </P>
+          </ContactDetails>
           <Div
             $padding="3px"
             $flex="flex"
@@ -93,14 +92,8 @@ const ContactMe = () => {
               Codedjay672
             </ContactLink>
           </Div>
-        </Div>
-        <Div
-          $width="45%"
-          $flex="flex"
-          $justify-content="center"
-          $align-items="center"
-          $overflow="hidden"
-        >
+        </ContactInfo>
+        <ContactImage>
           <Img
             src="/assets/profile.jpg"
             alt="contact img"
@@ -108,8 +101,8 @@ const ContactMe = () => {
             $height="100%"
             $object-fit="contain"
           />
-        </Div>
-      </Div>
+        </ContactImage>
+      </ContactDiv>
     </ContactWrapper>
   );
 };

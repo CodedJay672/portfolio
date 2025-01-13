@@ -40,3 +40,16 @@ export const FooterLink = styled.a`
     background-color: #3c3e670f;
   }
 `;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+`;

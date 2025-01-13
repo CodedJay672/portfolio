@@ -6,17 +6,12 @@ import {
   RiTwitterLine,
 } from "react-icons/ri";
 import { Div, P } from "../../shared/styles";
-import { FooterLink, FooterWrapper, Hr } from "./FooterStyles";
+import { FooterContainer, FooterLink, FooterWrapper, Hr } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <Div
-        $flex="flex"
-        $justify-content="space-between"
-        $align-items="center"
-        $width="100%"
-      >
+      <FooterContainer>
         <Div $width="400px">
           <P
             $size="13.8px"
@@ -55,7 +50,7 @@ const Footer = () => {
             <RiGithubLine color="#3c3e67af" size={14} />
           </FooterLink>
         </Div>
-      </Div>
+      </FooterContainer>
       <Hr />
       <P $size="11.4px" $weight="300" $color="#545454" $line-height="21.5px">
         {`Copyright © ${new Date().getFullYear()} by Emmanuel Ugoh.`}
