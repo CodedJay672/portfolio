@@ -8,8 +8,8 @@ export const Wrapper = styled.section`
   &::before {
     position: absolute;
     content: "";
-    top: 103px;
-    left: 240px;
+    top: 10px;
+    left: 150px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
